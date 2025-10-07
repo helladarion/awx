@@ -1,0 +1,14 @@
+---
+###### ping_hosts.yml #####
+###### Check ping response from hosts
+- name: (ping_hosts) Ping Hosts Playbook
+  hosts: "all"
+  gather_facts: false
+  tasks:
+    - name: (ping_hosts) Ping host
+      ansible.builtin.ping:
+#      register: ping
+
+#    - name: Report ping
+#      debug: var=ping['ping']
+
